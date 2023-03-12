@@ -2,15 +2,21 @@
 <html>
 
 <head>
+    <!-- The title of the page -->
     <title>Rock Paper Scissors Spock Lizard Game</title>
+    <!-- The stylesheet for the page -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- The heading for the game -->
     <h1>Rock Paper Scissors Spock Lizard Game</h1>
+    <!-- The game board, containing the player and computer options -->
     <div id="game">
         <div class="player">
+            <!-- The heading for the player's options -->
             <h2>You</h2>
+            <!-- The buttons for the player's options, with an onclick event to trigger the play function -->
             <div class="options">
                 <button class="rock" onclick="play('rock')">Rock</button>
                 <button class="paper" onclick="play('paper')">Paper</button>
@@ -18,10 +24,13 @@
                 <button class="spock" onclick="play('spock')">Spock</button>
                 <button class="lizard" onclick="play('lizard')">Lizard</button>
             </div>
+            <!-- The element to display the player's choice -->
             <p id="player-choice"></p>
         </div>
         <div class="computer">
+            <!-- The heading for the computer's options -->
             <h2>Computer</h2>
+            <!-- The buttons for the computer's options, with an onclick event to trigger the play function with the second parameter as true -->
             <div class="options">
                 <button class="rock" onclick="play('rock', true)">Rock</button>
                 <button class="paper" onclick="play('paper', true)">Paper</button>
@@ -29,10 +38,13 @@
                 <button class="spock" onclick="play('spock', true)">Spock</button>
                 <button class="lizard" onclick="play('lizard', true)">Lizard</button>
             </div>
+            <!-- The element to display the computer's choice -->
             <p id="computer-choice"></p>
         </div>
+        <!-- The element to display the result of the game -->
         <div id="result"></div>
     </div>
+    <!-- The JavaScript file for the game -->
     <script src="script.js"></script>
 </body>
 
