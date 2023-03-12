@@ -1,36 +1,43 @@
+/* Set the background color of the page to a red and the font family to Arial or a sans-serif font */
 body {
-    background-color: #f5f5f5;
+    background-color: #ff3c00;
     font-family: Arial, sans-serif;
 }
 
+/* Center the heading, add top margin */
 h1 {
     text-align: center;
     margin-top: 50px;
 }
 
+/* Set up the game board: display as flex, evenly space the player and computer options, and add top margin */
 #game {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
 }
 
+/* Set up the player and computer options: set width to 200px, center the text */
 .player,
 .computer {
     width: 200px;
     text-align: center;
 }
 
+/* Style the headings for the player and computer */
 .player h2,
 .computer h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+/* Set up the options for the player and computer: display as flex, evenly space the buttons */
 .options {
     display: flex;
     justify-content: space-between;
 }
 
+/* Style the buttons: add padding, set font size, set background color, set border and border radius, set cursor to pointer */
 button {
     padding: 10px;
     font-size: 16px;
@@ -40,11 +47,13 @@ button {
     cursor: pointer;
 }
 
+/* Style the buttons on hover: change background color to black and text color to white */
 button:hover {
     background-color: #333;
     color: #fff;
 }
 
+/* Style the result element: center the text and add top margin and font size */
 #result {
     text-align: center;
     margin-top: 50px;
