@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Rock Paper Scissors Spock Lizard Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Rock Paper Scissors Spock Lizard</h1>
+    <h1>Rock Paper Scissors Spock Lizard Game</h1>
+    <div id="game">
+        <div class="player">
+            <h2>You</h2>
+            <div class="options">
+                <button class="rock" onclick="play('rock')">Rock</button>
+                <button class="paper" onclick="play('paper')">Paper</button>
+                <button class="scissors" onclick="play('scissors')">Scissors</button>
+                <button class="spock" onclick="play('spock')">Spock</button>
+                <button class="lizard" onclick="play('lizard')">Lizard</button>
+            </div>
+            <p id="player-choice"></p>
+        </div>
+        <div class="computer">
+            <h2>Computer</h2>
+            <div class="options">
+                <button class="rock" onclick="play('rock', true)">Rock</button>
+                <button class="paper" onclick="play('paper', true)">Paper</button>
+                <button class="scissors" onclick="play('scissors', true)">Scissors</button>
+                <button class="spock" onclick="play('spock', true)">Spock</button>
+                <button class="lizard" onclick="play('lizard', true)">Lizard</button>
+            </div>
+            <p id="computer-choice"></p>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
